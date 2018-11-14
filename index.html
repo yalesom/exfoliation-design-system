@@ -1,0 +1,244 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Exfoliation Design Documentation</title>
+  <link rel="shortcut icon" href="assets/core/favicon-96x96.png">
+  <style>
+    blockquote[class*=catalog-] { font-size: 1.5rem !important; padding:0 !important; }
+    blockquote[class*=catalog-] > * { float:none !important; width: auto !important;}
+    blockquote[class*=catalog-] p::after, blockquote[class*=catalog-] p::before { content:'' !important; }
+    h1 {font-weight: 700 !important;}
+    label { display:block; }
+  </style>
+</head>
+<body>
+  <div id="catalog" />
+  <!-- Required for React specimens -->
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+  <!-- Use the development version to get helpful errors in your console -->
+  <!-- <script src="https://unpkg.com/catalog@3/dist/catalog-standalone.development.js"></script> -->
+
+  <!-- Use the minified production version to get optimal performance -->
+  <script src="https://unpkg.com/catalog@3/dist/catalog-standalone.min.js"></script>
+
+
+  <script>
+    Catalog.render({
+      title: 'Exfoliation design system',
+      styles: ['https://som.yale.edu/sites/all/themes/yale_alumni/assets/dist/css/yale_alumni.main.min.css', 'https://som.yale.edu/sites/all/themes/yalesom/assets/dist/css/yalesom-theme.main.min.css','http://som.test/sites/all/themes/common_assets/components/card-slider/assets/dist/css/card-slider.main.min.css','http://som.test/sites/all/themes/common_assets/components/media-slider/assets/dist/css/media-slider.main.min.css'],
+      logoSrc:'assets/core/yalesom_shield.svg',
+      responsiveSizes: [
+        {name: 'Phone', width: 375, height: 480},
+        {name: 'Tablet', width: 720, height: 1024},
+        {name: 'Desktop', width: 1024, height: 1080},
+        {name: 'Big desktop', width: 1280, height: 1080},
+      ],
+      theme: {
+        // Colors
+        background: "#fff",
+        textColor: "#14171A",
+        codeColor: "#7c756e",
+        linkColor: "#1069A0",
+
+        // NavigationBar background color, but also sometimes used as a foreground
+        // or border color.
+        lightColor: "#f6f6f6",
+
+        // Used in PageHeader
+        pageHeadingBackground: "#fff",
+        pageHeadingTextColor: "#000440",
+
+        // Used in Menu and PageHeader to make sure the top parts have
+        // the same height.
+        pageHeadingHeight: 160,
+
+        // Used for navigation bar
+        navBarBackground: "#fff",
+        navBarTextColor: "#1f2021",
+
+        // Used in ResponsiveTabs (tab text), Download specimen (title text).
+        // Typography: headings.
+        brandColor: "#1069A0",
+
+        sidebarColor: "#fff",
+        sidebarColorActive: "#000440",
+        sidebarColorText: "#000440",
+        sidebarColorTextActive: "#4BA5D7",
+        sidebarColorLine: "#f2f1f1",
+        sidebarColorHeading: "#1f2021",
+
+        // Used in the html, react, and image specimens.
+        bgLight: "#fff",
+        bgDark: "#000440",
+
+        // Keys appear to be PrismJS token types.
+        codeStyles: {
+          tag: { color: "#6C8A3A" },
+          punctuation: { color: "#7c756e" },
+          script: { color: "#C46D14" },
+          function: { color: "#942d2d" },
+          keyword: { color: "#1069A0" },
+          string: { color: "#535353" }
+        },
+
+        // Patterns
+        // checkerboardPatternLight:
+        //   "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAAAAACoWZBhAAAAF0lEQVQI12P4BAI/QICBFCaYBPNJYQIAkUZftTbC4sIAAAAASUVORK5CYII=",
+        // checkerboardPatternDark:
+        //   "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAAAAACoWZBhAAAAFklEQVQI12NQBQF2EGAghQkmwXxSmADZJQiZ2ZZ46gAAAABJRU5ErkJggg==",
+
+        // Fonts
+        fontFamily: "'NeueHaasUnicaPro', clean, sans-serif",//"'Yale', serif",
+        fontHeading: "'NeueHaasUnicaPro', clean, sans-serif",
+        fontMono: "'Roboto Mono', monospace",
+
+        // Base font size in pixels.
+        // baseFontSize: 16,
+
+        // Modular scale ratio that is used to figure out all the different font sizes
+        msRatio: 1.1
+      },
+      pages: [
+        // Sample, do not remove
+        // {
+        //  path: '/',             // Path where the page can be accessed
+        //  title: 'Introduction', // Page title
+        //  src: 'docs/intro.md',  // Path to the Markdown document
+        //  pages : [ // Subpages. NOTE: only include parent title if using pages
+        //    { repeat pattern (e.g., path, title, src) },
+        //  ]
+        // },
+        {
+          title:'Introduction',
+          pages:[
+            {
+              path:'/',
+              title:'Exfoliation design system',
+              src:'docs/introduction/intro.md',
+            },
+            {
+              path:'/introduction/cheatsheet',
+              title:'Cheat sheet',
+              src:'docs/introduction/cheatsheet.md',
+            }
+          ]
+        },
+        {
+          title: 'Brand',
+          pages:[
+            {
+              path:'/brand/logo',
+              title:'Logo',
+              src:'docs/brand/logo.md',
+            },
+            {
+              path:'/brand/color',
+              title:'Colors',
+              src:'docs/brand/color.md',
+            },
+            {
+              path:'/brand/typography',
+              title:'Typography',
+              src:'docs/brand/typography.md',
+            },
+            {
+              path:'/brand/icons',
+              title:'Icons',
+              src:'docs/brand/icons.md',
+            }
+          ]
+        },
+        {
+          title: 'Design System',
+          pages:[
+            {
+              path:'/design/buttons',
+              title:'Buttons',
+              src:'docs/design_system/buttons.md',
+            },
+            {
+              path:'/design/tables',
+              title:'Tables',
+              src:'docs/design_system/tables.md',
+            },
+            {
+              path:'/design/forms',
+              title:'Forms',
+              src:'docs/design_system/forms.md',
+            },
+            {
+              path:'/patterns/boxes',
+              title:'Boxes',
+              src:'docs/design_system/boxes.md',
+            },
+            {
+              path:'/patterns/tooltip',
+              title:'Tooltip',
+              src:'docs/design_system/tooltip.md',
+            },
+            // {
+            //   path:'/design/metadata',
+            //   title:'Metadata',
+            //   src:'docs/design_system/metadata.md',
+            // }
+          ]
+        },
+        {
+          title: 'Patterns',
+          pages: [
+            {
+              path:'/patterns/cards',
+              title:'Cards',
+              src:'docs/patterns/cards.md',
+            },
+            {
+              path:'/patterns/image-cluster',
+              title:'Image Cluster',
+              src:'docs/patterns/image-cluster.md',
+            },
+            {
+              path:'/patterns/media-slider',
+              title:'Media Slider',
+              src:'docs/patterns/media-slider.md',
+            },
+            {
+              path:'/patterns/teasers',
+              title:'Content Teasers',
+              src:'docs/patterns/teasers.md',
+            }
+          ]
+        },
+        {
+          title: 'Layout',
+          pages:[
+            {
+              path:'/layout/grid',
+              title:'Grid System',
+              src:'docs/layout/grid.md',
+            },
+            {
+              path:'/layout/content',
+              title:'Content layout',
+              src:'docs/layout/content-layout.md',
+            },
+            {
+              path:'/layout/content-group',
+              title:'Content group',
+              src:'docs/layout/content-group.md',
+            }
+          ]
+        },
+        {
+          path: '/resources',
+          title: 'Resources',
+          src: 'docs/resources/downloads.md',
+        }
+        // Other pages …
+      ]
+    }, document.getElementById('catalog'));
+  </script>
+</body>
+</html>
