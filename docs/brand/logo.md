@@ -8,16 +8,16 @@ Please be sure to select the correct logo variant for your background color
 
 # Exdent
 ```image|plain,span-2,light
-src: "yalesom/assets/brand/yalesom_logo_dark_stacked.svg"
+src: "exfoliation-design-system/assets/brand/yalesom_logo_dark_stacked.svg"
 title: "Light Backgrounds"
 description: |
   Shield with black outline
 ```
 ```image|plain,span-1
-src: "yalesom/assets/core/blank.gif"
+src: "exfoliation-design-system/assets/core/blank.gif"
 ```
 ```image|plain,span-2,dark
-src: "yalesom/assets/brand/yalesom_logo_white_stacked.svg"
+src: "exfoliation-design-system/assets/brand/yalesom_logo_white_stacked.svg"
 title: "Dark Backgrounds"
 description: |
   Shield with light blue outline
@@ -25,7 +25,7 @@ description: |
 # One-line
 
 ```image|plain,span-3
-src: "yalesom/assets/brand/yalesom_logo_dark.svg"
+src: "exfoliation-design-system/assets/brand/yalesom_logo_dark.svg"
 ```
 
 [resources]: /resources
