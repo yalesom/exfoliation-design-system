@@ -7,7 +7,7 @@ name: "Dark Blue (Brand)"
 value: "#000440"
 ```
 ```color
-span: 2
+span: 1
 name: "Blue"
 value: "#1069a0"
 ```
@@ -20,6 +20,11 @@ value: "#4ba5d7"
 span: 1
 name: "Pale Blue"
 value: "#a5d2eb"
+```
+```color
+span: 1
+name: "Tint Blue"
+value: "#e7f0f6"
 ```
 
 ## Neutrals
@@ -131,6 +136,11 @@ The options below offer color palette combinations that fall within the range of
 ```
 ```html|plain,span-3
 <div style="background:#000440" class="accessible-color">
+  <span style="color:#e7f0f6">Brand blue with tint blue text</span>
+</div>
+```
+```html|plain,span-3
+<div style="background:#000440" class="accessible-color">
   <span style="color:#a5d2eb">Brand blue with pale blue text</span>
 </div>
 ```
@@ -160,6 +170,11 @@ The options below offer color palette combinations that fall within the range of
 </div>
 ```
 ```html|plain,span-3
+<div style="background:#1069a0" class="accessible-color">
+  <span style="color:#e7f0f6">Blue with tint blue text</span>
+</div>
+```
+```html|plain,span-3
 <div style="background:#4ba5d7" class="accessible-color">
   <span style="color:#14171a">Light blue with black text</span>
 </div>
@@ -171,12 +186,27 @@ The options below offer color palette combinations that fall within the range of
 ```
 ```html|plain,span-3
 <div style="background:#a5d2eb" class="accessible-color">
-  <span style="color:#14171a">Tint blue with black text</span>
+  <span style="color:#14171a">Pale blue with black text</span>
 </div>
 ```
 ```html|plain,span-3
 <div style="background:#a5d2eb" class="accessible-color">
+  <span style="color:#000440">Pale blue with brand blue text</span>
+</div>
+```
+```html|plain,span-3
+<div style="background:#e7f0f6" class="accessible-color">
+  <span style="color:#14171a">Tint blue with black text</span>
+</div>
+```
+```html|plain,span-3
+<div style="background:#e7f0f6" class="accessible-color">
   <span style="color:#000440">Tint blue with brand blue text</span>
+</div>
+```
+```html|plain,span-3
+<div style="background:#e7f0f6" class="accessible-color">
+  <span style="color:#1069a0">Tint blue with blue text</span>
 </div>
 ```
 ## Color backgrounds, neutrals
@@ -187,22 +217,27 @@ The options below offer color palette combinations that fall within the range of
 ```
 ```html|plain,span-3
 <div style="background:#14171a" class="accessible-color">
+  <span style="color:#f6f6f6">Black with tint gray text</span>
+</div>
+```
+```html|plain,span-3
+<div style="background:#14171a" class="accessible-color">
+  <span style="color:#a7a6a6">Black with light gray text</span>
+</div>
+```
+```html|plain,span-3
+<div style="background:#14171a" class="accessible-color">
+  <span style="color:#e7f0f6">Black with tint blue text</span>
+</div>
+```
+```html|plain,span-3
+<div style="background:#14171a" class="accessible-color">
   <span style="color:#a5d2eb">Black with pale blue text</span>
 </div>
 ```
 ```html|plain,span-3
 <div style="background:#14171a" class="accessible-color">
   <span style="color:#4ba5d7">Black with light blue text</span>
-</div>
-```
-```html|plain,span-3
-<div style="background:#14171a" class="accessible-color">
-  <span style="color:#a7a6a6">Black with tint gray text</span>
-</div>
-```
-```html|plain,span-3
-<div style="background:#14171a" class="accessible-color">
-  <span style="color:#a7a6a6">Black with light gray text</span>
 </div>
 ```
 ```html|plain,span-3
