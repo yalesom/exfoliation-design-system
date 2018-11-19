@@ -11,6 +11,13 @@
     blockquote[class*=catalog-] p::after, blockquote[class*=catalog-] p::before { content:'' !important; }
     h1 {font-weight: 700 !important;}
     label { display:block; }
+    p a { color:inherit !important;
+      border-bottom-color:#a5d2eb !important;}
+      .accessible-color {
+        font-family: NeueHaasUnicaPro,clean,sans-serif;
+        font-weight: 700;
+        padding:0.5em;
+      }
   </style>
 </head>
 <body>
@@ -28,7 +35,7 @@
   <script>
     Catalog.render({
       title: 'Exfoliation design system',
-      styles: ['https://som.yale.edu/sites/all/themes/yale_alumni/assets/dist/css/yale_alumni.main.min.css', 'https://som.yale.edu/sites/all/themes/yalesom/assets/dist/css/yalesom-theme.main.min.css','http://som.test/sites/all/themes/common_assets/components/card-slider/assets/dist/css/card-slider.main.min.css','http://som.test/sites/all/themes/common_assets/components/media-slider/assets/dist/css/media-slider.main.min.css'],
+      styles: ['https://som.yale.edu/sites/all/themes/yalesom/assets/dist/css/yalesom-theme.main.min.css','http://som.test/sites/all/themes/common_assets/components/card-slider/assets/dist/css/card-slider.main.min.css','http://som.test/sites/all/themes/common_assets/components/media-slider/assets/dist/css/media-slider.main.min.css'],
       logoSrc:'assets/core/yalesom_shield.svg',
       responsiveSizes: [
         {name: 'Phone', width: 375, height: 480},

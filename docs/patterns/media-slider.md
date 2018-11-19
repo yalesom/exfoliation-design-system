@@ -1,7 +1,7 @@
 > Media slides are a method to introduce more complex stories without adding extraneous content.
 
 ```image|plain
-  src: "yalesom/assets/patterns/media-slider__sample.png"
+  src: "/exfoliation-design-system/assets/patterns/media-slider__sample.png"
   description: "Rendered example of a media slider"
 ```
 In contrast to [Cards], Media Slides should only be presented in the context of the slider.
@@ -17,8 +17,8 @@ Video is preferred for slides as it has greater potential for narrative.
         <div class="media-slider__media-wrapper" data-href="http://insights.som.yale.edu/insights/how-fair-is-american-society" data-title="" data-ischrome="true">
           <h2 class="media-slider__title">Economic Inequality</h2>
           <div class="media-slider__object">
-            <video class="media-slider__video" data-video-id="5579506689001" data-video-name="Michael Kraus on the Misperception of Racial Economic Equality - Data" data-title="Economic Inequality" poster="/yalesom/assets/patterns/Kraus_titleslide.jpg" src="http://f1.media.brightcove.com/4/1822790495001/1822790495001_5579531340001_5579506689001.mp4?pubId=1822790495001&amp;videoId=5579506689001" autoplay="true"></video>
-            <img class="media-slider__video_poster media-slider__video_poster--playing" src="/yalesom/assets/patterns/Kraus_titleslide.jpg">
+            <video class="media-slider__video" data-video-id="5579506689001" data-video-name="Michael Kraus on the Misperception of Racial Economic Equality - Data" data-title="Economic Inequality" poster="/exfoliation-design-system/assets/patterns/Kraus_titleslide.jpg" src="http://f1.media.brightcove.com/4/1822790495001/1822790495001_5579531340001_5579506689001.mp4?pubId=1822790495001&amp;videoId=5579506689001" autoplay="true"></video>
+            <img class="media-slider__video_poster media-slider__video_poster--playing" src="/exfoliation-design-system/assets/patterns/Kraus_titleslide.jpg">
           </div>
         </div>
         <div class="media-slider__meta-data">
@@ -43,7 +43,7 @@ When video content is not available, or is otherwise inappropriate, still images
         <div class="media-slider__media-wrapper" data-href="https://som.yale.edu/mission-objectives/interests-industries/finance" data-title="" data-ischrome="true">
           <h2 class="media-slider__title">Interests and Industries: Finance</h2>
           <div class="media-slider__object">
-          <figure class="media-slider__figure"><img src="/yalesom/assets/patterns/_DSC0185.jpg" class="media-slider__image media-slider__kb-pan-right"></figure>
+          <figure class="media-slider__figure"><img src="/exfoliation-design-system/assets/patterns/_DSC0185.jpg" class="media-slider__image media-slider__kb-pan-right"></figure>
           </div>
         </div>
         <div class="media-slider__meta-data">
@@ -69,7 +69,7 @@ Navigation in carousel/slider elements are **critical for web accessibility requ
         <div class="media-slider__media-wrapper" data-href="https://som.yale.edu/mission-objectives/interests-industries/finance" data-title="" data-ischrome="true">
           <h2 class="media-slider__title">Interests and Industries: Finance</h2>
           <div class="media-slider__object">
-            <figure class="media-slider__figure"><img src="/yalesom/assets/patterns/_DSC0185.jpg" class="media-slider__image"></figure>
+            <figure class="media-slider__figure"><img src="/exfoliation-design-system/assets/patterns/_DSC0185.jpg" class="media-slider__image"></figure>
           </div>
         </div>
         <div class="media-slider__meta-data">
@@ -82,8 +82,8 @@ Navigation in carousel/slider elements are **critical for web accessibility requ
         <div class="media-slider__media-wrapper" data-href="https://som.yale.edu/news/2018/01/yale-som-entrepreneurs-arix-technologies" data-title="" data-ischrome="true">
           <h2 class="media-slider__title">Yale SOM Entrepreneurs: Dianna Liu ’18</h2>
           <div class="media-slider__object">
-            <video class="media-slider__video" data-video-id="5749758390001" data-video-name="ARIX_Dianna Liu_Homepage_REV2" data-title="Yale SOM Entrepreneurs: Dianna Liu ’18" poster="/yalesom/assets/patterns/dianna_liu.jpg" src="http://f1.media.brightcove.com/4/1822790495001/1822790495001_5756355879001_5749758390001.mp4?pubId=1822790495001&amp;videoId=5749758390001"></video>
-            <img class="media-slider__video_poster" src="/yalesom/assets/patterns/dianna_liu.jpg">
+            <video class="media-slider__video" data-video-id="5749758390001" data-video-name="ARIX_Dianna Liu_Homepage_REV2" data-title="Yale SOM Entrepreneurs: Dianna Liu ’18" poster="/exfoliation-design-system/assets/patterns/dianna_liu.jpg" src="http://f1.media.brightcove.com/4/1822790495001/1822790495001_5756355879001_5749758390001.mp4?pubId=1822790495001&amp;videoId=5749758390001"></video>
+            <img class="media-slider__video_poster" src="/exfoliation-design-system/assets/patterns/dianna_liu.jpg">
             </div>
         </div>
         <div class="media-slider__meta-data">
@@ -96,8 +96,8 @@ Navigation in carousel/slider elements are **critical for web accessibility requ
         <div class="media-slider__media-wrapper" data-href="http://insights.som.yale.edu/insights/how-fair-is-american-society" data-title="" data-ischrome="true">
           <h2 class="media-slider__title">Economic Inequality</h2>
           <div class="media-slider__object">
-            <video class="media-slider__video" data-video-id="5579506689001" data-video-name="Michael Kraus on the Misperception of Racial Economic Equality - Data" data-title="Economic Inequality" poster="/yalesom/assets/patterns/Kraus_titleslide.jpg" src="http://f1.media.brightcove.com/4/1822790495001/1822790495001_5579531340001_5579506689001.mp4?pubId=1822790495001&amp;videoId=5579506689001"></video>
-            <img class="media-slider__video_poster media-slider__video_poster--playing" src="/yalesom/assets/patterns/Kraus_titleslide.jpg">
+            <video class="media-slider__video" data-video-id="5579506689001" data-video-name="Michael Kraus on the Misperception of Racial Economic Equality - Data" data-title="Economic Inequality" poster="/exfoliation-design-system/assets/patterns/Kraus_titleslide.jpg" src="http://f1.media.brightcove.com/4/1822790495001/1822790495001_5579531340001_5579506689001.mp4?pubId=1822790495001&amp;videoId=5579506689001"></video>
+            <img class="media-slider__video_poster media-slider__video_poster--playing" src="/exfoliation-design-system/assets/patterns/Kraus_titleslide.jpg">
             </div>
         </div>
         <div class="media-slider__meta-data">

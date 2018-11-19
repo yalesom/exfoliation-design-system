@@ -5,7 +5,7 @@ Dated content are commonly displayed chronologically in a list.
 ## Full
 Use where the display mode is the primary content of the page. For example, a blog overview page would have the posts in that blog as primary content. Author and timestamp are contained in the header with this pattern. Metadata are typically content tags.
 ```image|span-4
-  src: "yalesom/assets/patterns/teasers-article-full.png"
+  src: "/exfoliation-design-system/assets/patterns/teasers-article-full.png"
   description: "Rendered example"
 ```
 ```html|plain,light
@@ -18,7 +18,7 @@ Use where the display mode is the primary content of the page. For example, a bl
       <span class="timestamp">August 24, 2018</span>
   </header>
   <div class="node-teaser__main">
-    <figure class="node-teaser__image"><img src="/yalesom/assets/core/image-300x300.gif" alt="Class of 2020"></figure>
+    <figure class="node-teaser__image"><img src="/exfoliation-design-system/assets/core/image-300x300.gif" alt="Class of 2020"></figure>
     <div class="node-teaser__body">
       <p>The 347 new members of the Yale SOM community are as diverse and accomplished as any we have welcomed to New Haven.</p>
 
@@ -38,7 +38,7 @@ Use where the display mode is a supporting element on a page. For example, a lan
 Selected sources include a "bug" icon to indicate content external to the current site.
 
 ```image|span-2
-  src: "yalesom/assets/patterns/teasers-article-minimal.png"
+  src: "/exfoliation-design-system/assets/patterns/teasers-article-minimal.png"
   description: "Rendered example"
 ```
 ```code|collapsed
@@ -61,34 +61,34 @@ Selected sources include a "bug" icon to indicate content external to the curren
 Non-dated content use a more generic teaser structure, commonly featuring only a title, key image and excerpt.
 ## Large
 ```image|span-5
-  src: "yalesom/assets/patterns/teasers-page-large.png"
+  src: "/exfoliation-design-system/assets/patterns/teasers-page-large.png"
   description: "Rendered example"
 ```
 ## Detail
 Detail teasers are defined by their list of section links.
 ```image|span-3
-  src: "yalesom/assets/patterns/teasers-page-detail.png"
+  src: "/exfoliation-design-system/assets/patterns/teasers-page-detail.png"
   description: "Rendered example"
 ```
 ## Small
 ```image|span-3
-  src: "yalesom/assets/patterns/teasers-page-small.png"
+  src: "/exfoliation-design-system/assets/patterns/teasers-page-small.png"
   description: "Rendered example"
 ```
 
 # People
 ## Full
 ```image|span-4
-  src: "yalesom/assets/patterns/teasers-person-full.png"
+  src: "/exfoliation-design-system/assets/patterns/teasers-person-full.png"
   description: "Rendered example"
 ```
 ## Minimal
 ```image|span-2
-  src: "yalesom/assets/patterns/teasers-person-minimal.png"
+  src: "/exfoliation-design-system/assets/patterns/teasers-person-minimal.png"
   description: "Rendered example"
 ```
 ## Profiles
 ```image|span-2
-  src: "yalesom/assets/patterns/teasers-person-profile.png"
+  src: "/exfoliation-design-system/assets/patterns/teasers-person-profile.png"
   description: "Rendered example"
 ```

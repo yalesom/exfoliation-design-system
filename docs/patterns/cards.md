@@ -16,7 +16,7 @@ While each metadatum should be visually distinct, sizes and styles should remain
 Although cards are typically displayed in the context of a slider, single card instances are permissible.
 ```
 ```image|plain
-  src: "yalesom/assets/patterns/card-slider__sample.png"
+  src: "/exfoliation-design-system/assets/patterns/card-slider__sample.png"
   description: "Rendered example of a card slider"
 ```
 
@@ -30,7 +30,7 @@ Most cards will be content cards. External sources should include a small, brand
       <div class="card-slider__media" data-href="http://insights.som.yale.edu/insights/can-we-secure-online-identities" data-title="Can We Secure Online Identities? " data-main-image="https://som.yale.edu/sites/default/files/styles/yale_large_square_tile/public/insights/background/fingerprints.jpg?itok=vIUL6tht" data-target="_blank">
           <h2 class="card-slider__title" data-title="Can We Secure Online Identities? ">Can We Secure Online Identities? </h2>
           <img class="card-slider__badge-image" alt="Publication logo" src="https://som.yale.edu/sites/all/themes/common_assets/img/YaleInsights_bug.svg">
-          <a class="no-icon" href="https://insights.som.yale.edu/insights/can-we-secure-online-identities"><img src="/yalesom/assets/patterns/fingerprints.jpg" class="card-slider__media-image" alt="Can We Secure Online Identities?  card image" target="_blank"></a>
+          <a class="no-icon" href="https://insights.som.yale.edu/insights/can-we-secure-online-identities"><img src="/exfoliation-design-system/assets/patterns/fingerprints.jpg" class="card-slider__media-image" alt="Can We Secure Online Identities?  card image" target="_blank"></a>
       </div>
       <div class="card-slider__meta-data">
         <span class="card-slider__meta-data__date">January 12, 2018</span>
@@ -103,7 +103,7 @@ Twitter represents a unique type of social card in that the primary visual is te
   <li class="card-slider__card-slot">
     <article id="card-id-942196" class="card-slider__card card-slider__card--social card-slider__card--twitter">
       <div class="card-slider__media
-     card-slider__media--no-image" data-href="https://twitter.com/YaleSOM/status/1031559786419154944" data-main-image="" data-title="twitter" data-target="_blank">
+     card-slider__media--no-image" data-href="https://twitter.com/exfoliation-design-system/status/1031559786419154944" data-main-image="" data-title="twitter" data-target="_blank">
         <h2 class="card-slider__title">RT <a target="_blank" rel="nofollow" class="twitter-timeline-link" href="http://twitter.com/DBachGlobal">@DBachGlobal</a>: And we’re off! Dean <a target="_blank" rel="nofollow" class="twitter-timeline-link" href="http://twitter.com/EdwardASnyder">@EdwardASnyder</a> welcomes 70 new MAMs, 11 Systemic Risk students and the 32 members of our first… <a href="https://t.co/v0nS98XkiY">https://t.co/v0nS98XkiY</a></h2>
         <div class="card-slider__author-block">
           <a href="http://twitter.com/YaleSOM" target="_blank"><img class="card-slider__author-block__avatar" src="//pbs.twimg.com/profile_images/877910548100329472/ENIm5pUS_normal.jpg"></a> 								
@@ -111,7 +111,7 @@ Twitter represents a unique type of social card in that the primary visual is te
           <div class="card-slider__author-block__handle"><a href="http://twitter.com/YaleSOM" class="no-icon" target="_blank">@YaleSOM</a></div> 		
         </div>
         <div class="card-slider__timestamp"><em class="placeholder">2 weeks 1 day</em> ago</div>
-        <a class="no-icon" href="https://twitter.com/YaleSOM/status/1031559786419154944" target="_blank"></a>
+        <a class="no-icon" href="https://twitter.com/exfoliation-design-system/status/1031559786419154944" target="_blank"></a>
       </div>
       <ul class="card-slider__meta-data__social-share icon-linearicon social-share--list">
         <li><a href="http://twitter.com/intent/tweet?in_reply_to=1031559786419154944" target="_blank" class="icon--reply no-icon"></a></li>

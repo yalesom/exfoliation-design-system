@@ -4,10 +4,10 @@ Icon fonts can be downloaded in the [resources] section. Most icon instances are
 
 # Linearicons
 
-[Linearicons] is the default icon library for all UI. 
+[Linearicons] is the default icon library for all UI.
 
 ```image|plain,dark
-src: "yalesom/assets/brand/linearicons-sample.svg"
+src: "/exfoliation-design-system/assets/brand/linearicons-sample.svg"
 title: "Sample of library"
 ```
 
