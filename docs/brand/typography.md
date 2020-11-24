@@ -1,6 +1,9 @@
 # Typeface
+
 ## Neue Haas Unica Pro
+
 Neue Haas Unica Pro is primarily used for headings, navigational elements and metadata. Italics are available, but rarely used.
+
 ```type|span-3,kern
 {
   "headings": [
@@ -12,6 +15,7 @@ Neue Haas Unica Pro is primarily used for headings, navigational elements and me
   "weight":"300"
 }
 ```
+
 ```type|span-3,kern
 {
   "headings": [
@@ -23,8 +27,11 @@ Neue Haas Unica Pro is primarily used for headings, navigational elements and me
   "weight":"700"
 }
 ```
+
 ## Yale Design
+
 Yale's custom font is used for large spans of text, commonly paragraphs.
+
 ```type|span-3,kern
 {
   "headings": [
@@ -36,6 +43,7 @@ Yale's custom font is used for large spans of text, commonly paragraphs.
   "weight":"300"
 }
 ```
+
 ```type|span-3,kern
 {
   "headings": [
@@ -47,6 +55,7 @@ Yale's custom font is used for large spans of text, commonly paragraphs.
   "weight":"300"
 }
 ```
+
 ```type|span-3,kern
 {
   "headings": [
@@ -58,6 +67,7 @@ Yale's custom font is used for large spans of text, commonly paragraphs.
   "weight":"700"
 }
 ```
+
 ```type|span-3,kern
 {
   "headings": [
@@ -71,6 +81,7 @@ Yale's custom font is used for large spans of text, commonly paragraphs.
 ```
 
 # Sizes
+
 Font sizes use a Greek symbol for basic sizes and metric prefixes at the extremes. See the [font-size variables][size] for reference.
 
 ```type|single
@@ -97,6 +108,7 @@ Font sizes use a Greek symbol for basic sizes and metric prefixes at the extreme
   "weight":"700"
 }
 ```
+
 ```type|kafka
 {
   "paragraphs": [
@@ -105,12 +117,17 @@ Font sizes use a Greek symbol for basic sizes and metric prefixes at the extreme
   "font": "'Yale', serif"
 }
 ```
+
 ## Font scaling
+
 Exfoliation uses [font scaling][scaling] to adjust a base font size relative to the screen width (i.e., breakpoint). Different breakpoints may use different size/scale relationships.
+
 ```hint|warning
 Font scaling should **only** be used for larger headlines.
 ```
+
 #### Font size calculator by breakpoint
+
 ```react|plain,light,no-source
 state: {value: 38, scale: 1, breakpoint: 375}
 ---
@@ -141,35 +158,6 @@ state: {value: 38, scale: 1, breakpoint: 375}
 Approximately <strong>{Math.round( (((parseInt(state.value) / 16) - 0.875) * 16) + ((parseInt(state.scale)/100) * parseInt(state.breakpoint)) )}</strong> px</p>
 
 </div>
-```
-
-# Headings
-## Default styles
-```html|span-3,noSource,plain,light
-<h1>Heading 1</h1>
-```
-```html|span-3,noSource,plain,light
-<h2>Heading 2</h2>
-```
-```html|span-3,noSource,plain,light
-<h3>Heading 3</h3>
-```
-```html|span-3,noSource,plain,light
-<h4>Heading 4</h4>
-```
-```html|span-3,noSource,plain,light
-<h5>Heading 5</h5>
-```
-```html|span-3,noSource,plain,light
-<h6>Heading 6</h6>
-```
-
-## Variant styles
-```html|span-3,noSource,plain,light
-<h2 class="sub-title">Page subtitle</h2>
-```
-```html|span-3,noSource,plain,light
-<h2 class="intro">Page introduction</h2>
 ```
 
 [size]: https://bitbucket.org/sq360_sysadmin/yale-som-theme/src/master/scss/core/_fonts.scss

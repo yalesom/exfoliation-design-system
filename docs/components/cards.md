@@ -1,6 +1,7 @@
 > **Cards** visually articulate a single topic with a minimum of information. They should be simple, actionable and easy to scan.
 
 # Anatomy
+
 ```image|plain,span-4
 src: "/exfoliation-design-system/assets/components/card-anatomy.png"
 ```
@@ -8,176 +9,201 @@ src: "/exfoliation-design-system/assets/components/card-anatomy.png"
 ## Elements
 
 **Headline**
-*(required)* Header text is the only required element of a card. Headlines should scale to fill the available container space and be concise so as not to conflict with image content. Text always is contained inside the image region and is most commonly is aligned to the left and bottom of the container. 
+_(required)_ Header text is the only required element of a card. Headlines should scale to fill the available container space and be concise so as not to conflict with image content. Text always is contained inside the image region and is most commonly is aligned to the left and bottom of the container.
 
 **Image**
-*(preferred)* All card types should, whenever possible, highlight a compelling image. 
+_(preferred)_ All card types should, whenever possible, highlight a compelling image.
 
 **Metadata**
-*(optional)* Metadata represents the critical details necessary to give context to an individual card. Commonly:   
-- *Date* — when was the content published
-- *Author* — who authored to the content
-- *Source* — where was the content published
+_(optional)_ Metadata represents the critical details necessary to give context to an individual card. Commonly:
+
+- _Date_ — when was the content published
+- _Author_ — who authored to the content
+- _Source_ — where was the content published
 
 While each metadatum should be visually distinct, sizes and styles should remain consistent to the parent application.
 
 **Description**
-*(optional)*  Provides additional context to a card where the headline/image is insufficient. Descriptions should be brief (maximum of 4 lines). Desrciptions should not be used in conjuction with Metadata.
+_(optional)_ Provides additional context to a card where the headline/image is insufficient. Descriptions should be brief (maximum of 4 lines). Desrciptions should not be used in conjuction with Metadata.
 
 **Source logo**
-*(optional)*  External sources may be called out by a small, branded identifier in the upper right of the card.
+_(optional)_ External sources may be called out by a small, branded identifier in the upper right of the card.
 
 # Specimens
 
-```html|span-4,plain,light,no-source
-<ul class="card-slider__card-slot-list" data-min-height="true">
-<li class="card-slider__card-slot">
-<article id="card-id-941535" class="card-slider__card card-slider__card--internal_reference">
-<div class="card-slider__media" data-href="http://insights.som.yale.edu/insights/can-we-secure-online-identities" data-title="Can We Secure Online Identities? " data-main-image="/exfoliation-design-system/assets/components/fingerprints.jpg" data-target="_blank">
-<h2 class="card-slider__title" data-title="Can We Secure Online Identities? ">Can We Secure Online Identities? </h2>
-<img class="card-slider__badge-image" alt="Publication logo" src="https://som.yale.edu/sites/all/themes/common_assets/img/YaleInsights_bug.svg">
-<a class="no-icon" href="https://insights.som.yale.edu/insights/can-we-secure-online-identities"><img src="/exfoliation-design-system/assets/components/fingerprints.jpg" class="card-slider__media-image" alt="Can We Secure Online Identities?  card image" target="_blank"></a>
-</div>
-<div class="card-slider__meta-data">
-<span class="card-slider__meta-data__date">January 12, 2018</span>
-<span class="card-slider__meta-data__authors"><a href="//insights.som.yale.edu/single-contributor/24015">Sunil Madhu</a></span>
-<span class="card-slider__meta-data__source"><a href="http://insights.som.yale.edu" target="_blank">Yale Insights</a></span>
-</div>
-</article>
+```html|span-4,plain,light
+<ul class="ysm-slider__list" data-min-height="true">
+<li class="ysm-slider__slot">
+<article id="paragraph-19116" class="node-teaser card">
+  <header class="card__object card--has-url card--insights_article" data-dynamic-font-size="true" style="--dynamic-font-size:486px">
+    <h2 class="card__title">
+      Study Finds Hospital Desegregation Didn’t Improve Mortality Rate for Black Infants    </h2>
+    <div class="card__media">
+            <a href="https://insights.som.yale.edu/insights/study-finds-hospital-desegregation-didnt-improve-mortality-rate-for-black-infants" class="no-icon" aria-label="Continue reading Study Finds Hospital Desegregation Didn’t Improve Mortality Rate for Black Infants">
+                          <picture><source media="all and (min-width: 851px)" type="image/webp" srcset="https://insights.som.yale.edu/sites/default/files/styles/square_sm/public/2020-10/desegregation%20of%20hospitals%20infant%20mortality.webp?h=63566863&amp;itok=pzhsmQVr 1x,https://insights.som.yale.edu/sites/default/files/styles/square/public/2020-10/desegregation%20of%20hospitals%20infant%20mortality.webp?h=63566863&amp;itok=kKmxyVTh 2x"><source media="all and (min-width: 851px)" type="image/jpeg" srcset="https://insights.som.yale.edu/sites/default/files/styles/square_sm/public/2020-10/desegregation%20of%20hospitals%20infant%20mortality.jpg?h=63566863&amp;itok=pzhsmQVr 1x, https://insights.som.yale.edu/sites/default/files/styles/square/public/2020-10/desegregation%20of%20hospitals%20infant%20mortality.jpg?h=63566863&amp;itok=kKmxyVTh 2x"><source type="image/webp" srcset="https://insights.som.yale.edu/sites/default/files/styles/square_sm/public/2020-10/desegregation%20of%20hospitals%20infant%20mortality.webp?h=63566863&amp;itok=pzhsmQVr"><source type="image/jpeg" srcset="https://insights.som.yale.edu/sites/default/files/styles/square_sm/public/2020-10/desegregation%20of%20hospitals%20infant%20mortality.jpg?h=63566863&amp;itok=pzhsmQVr"><img src="https://insights.som.yale.edu/sites/default/files/styles/square_sm/public/2020-10/desegregation%20of%20hospitals%20infant%20mortality.jpg?h=63566863&amp;itok=pzhsmQVr" alt="A black and white photo of a Black woman holding a newborn baby in a hospital ed" class="card__image" aria-role="presentation"></picture>                      </a>
+        </div>
+  </header>
+      <footer class="metadata metadata--flat metadata--submitted">
+      <span class="metadata__item metadata__timestamp timestamp">October 26, 2020</span>                        <span class="metadata__item metadata__author"><a href="https://insights.som.yale.edu/researchers/kerwin-k-charles">Kerwin K. Charles</a></span>
+
+
+      <span class="metadata__item metadata__source metadata__source--insights_article"><a href="https://insights.som.yale.edu">Yale Insights</a></span>    </footer>
+    </article>
 </li>
 </ul>
 ```
+
 ```hint|neutral,span-2
 **Content card**
 Most cards will be content cards and link to another page. Images should darken and blur on interactions to improve headline legibility for the focused element.
 ```
-```html|span-4,plain,light,no-source
-<ul class="card-slider__card-slot-list" data-min-height="true">
-<li class="card-slider__card-slot">
-<article id="card-id-942176" class="card-slider__card card-slider__card--internal_reference">
-<div class="card-slider__media card-slider__media--no-image" data-href="http://insights.som.yale.edu/insights/departing-pepsico-ceo-indra-nooyi-did-it-her-way" data-title="Prof. Jeffrey Sonnenfeld: PepsiCo CEO Indra Nooyi ’80 Did It Her Way" data-main-image="" data-target="_blank">
-<h2 class="card-slider__title" data-title="Prof. Jeffrey Sonnenfeld: PepsiCo CEO Indra Nooyi ’80 Did It Her Way">Prof. Jeffrey Sonnenfeld: PepsiCo CEO Indra Nooyi ’80 Did It Her Way</h2>
-</div>
-<div class="card-slider__meta-data">
-<span class="card-slider__meta-data__date">August 7, 2018</span>
-<span class="card-slider__meta-data__authors"><a href="//insights.som.yale.edu/single-contributor/8268">Jeffrey A. Sonnenfeld</a></span>
-<span class="card-slider__meta-data__source"><a href="https://som.yale.edu/about/recent-news" target="_blank">News</a></span>
-</div>
-</article>
+
+```html|span-4,plain,light
+<ul class="ysm-slider__list" data-min-height="true">
+<li class="ysm-slider__slot">
+<article id="paragraph-19115" class="card node-teaser">
+  <header class="card__object card--has-url card--no-media card--individual_profile" data-dynamic-font-size="true" style="--dynamic-font-size:486px">
+    <h2 class="card__title">
+      Alumni Profile: Developing Skills to Support Educators    </h2>
+    <div class="card__media">
+            <a href="https://som.yale.edu/profile/morgan-hall-10" class="no-icon" aria-label="Continue reading Alumni Profile: Developing Skills to Support Educators"></a>
+        </div>
+  </header>
+      <footer class="metadata metadata--flat metadata--submitted">
+      <span class="metadata__item metadata__timestamp timestamp">August 26, 2020</span>              <span class="metadata__item metadata__author">Morgan Hall ’10</span>
+
+
+      <span class="metadata__item metadata__source metadata__source--individual_profile"><a href="/community/community-profiles" aria-label="Search all community profiles">Community Profile</a></span>    </footer>
+    </article>
 </li>
 </ul>
 ```
+
 ```hint|neutral,span-2
 **Non-image content card**
 Cards without associated visual media should reverse the contrast relationship of headline to background to put greater emphasis on text. Cards of this type should also have an alternate hover/focus effect.
 ```
+
 ## Variants
+
 ```html|span-4,plain,light
-<ul class="card-slider__card-slot-list" data-min-height="true">
-<li class="card-slider__card-slot">
-<article id="card-id-942198" class="card-slider__card card-slider__card--social card-slider__card--instagram">
-<div class="card-slider__media
-" data-href="https://www.instagram.com/p/BjX1hkHFMZ-" data-main-image="/exfoliation-design-system/assets/components/33627109_216557572275428_1368073815376003072_n.jpg" data-title="instagram" data-main-image-source="external" data-target="_blank">
-<h2 class="card-slider__title"></h2>
-<a style="background-image:url(/exfoliation-design-system/assets/components/33627109_216557572275428_1368073815376003072_n.jpg);" class="no-icon card-slider__media-image external" href="https://www.instagram.com/p/BjX1hkHFMZ-" target="_blank"></a>
-</div>
-<div class="card-slider__meta-data icon-instagram">
-<span class="card-slider__meta-data__authors"><a href="https://www.instagram.com/yalesom" target="_blank">yalesom</a></span>
-<span class="card-slider__meta-data__date">May 29, 2018</span>
-</div>
+<ul class="ysm-slider__list" data-min-height="true">
+<li class="ysm-slider__slot">
+<article id="card-id-942198" class="card card--social">
+<header class="card__object card--has-url card--social--instagram" data-dynamic-font-size="true" style="--dynamic-font-size:486px">
+    <div class="card__media">
+            <a style="background-image:url(/exfoliation-design-system/assets/components/33627109_216557572275428_1368073815376003072_n.jpg);" class="no-icon external" href="https://www.instagram.com/p/BjX1hkHFMZ-" target="_blank"></a>
+        </div>
+  </header>
+  <footer class="metadata metadata--flat metadata--submitted">
+  <span class="metadata__item metadata__timestamp timestamp">May 29, 2018</span>
+   <span class="metadata__item metadata__author"><a href="https://www.instagram.com/yalesom" target="_blank">@yalesom</a></span>
+
+   </footer>
 </article>
 </li>
 </ul>
 ```
+
 ```hint|neutral,span-2
 **Image-only social card**
 Source provides slightly more context for this card type, so source metadata should be moved to the beginning of the stack. In addition, headlines are optional for this card type, especially when an visual is a self-contained context (i.e., Instagram).
 ```
-```html|span-4,plain,light,no-source
-<ul class="card-slider__card-slot-list" data-min-height="true">
-<li class="card-slider__card-slot">
-<article id="card-id-942196" class="card-slider__card card-slider__card--social card-slider__card--twitter">
-<div class="card-slider__media
-card-slider__media--no-image" data-href="https://twitter.com/exfoliation-design-system/status/1031559786419154944" data-main-image="" data-title="twitter" data-target="_blank">
-<h2 class="card-slider__title">RT <a target="_blank" rel="nofollow" class="twitter-timeline-link" href="http://twitter.com/DBachGlobal">@DBachGlobal</a>: And we’re off! Dean <a target="_blank" rel="nofollow" class="twitter-timeline-link" href="http://twitter.com/EdwardASnyder">@EdwardASnyder</a> welcomes 70 new MAMs, 11 Systemic Risk students and the 32 members of our first… <a href="https://t.co/v0nS98XkiY">https://t.co/v0nS98XkiY</a></h2>
-<div class="card-slider__author-block">
-<a href="http://twitter.com/YaleSOM" target="_blank"><img class="card-slider__author-block__avatar" src="//pbs.twimg.com/profile_images/877910548100329472/ENIm5pUS_normal.jpg"></a>                                 
-<div class="card-slider__author-block__name"><a href="http://twitter.com/YaleSOM" class="no-icon" target="_blank">Yale SOM</a></div>
-<div class="card-slider__author-block__handle"><a href="http://twitter.com/YaleSOM" class="no-icon" target="_blank">@YaleSOM</a></div>         
-</div>
-<div class="card-slider__timestamp"><em class="placeholder">2 weeks 1 day</em> ago</div>
-<a class="no-icon" href="https://twitter.com/exfoliation-design-system/status/1031559786419154944" target="_blank"></a>
-</div>
-<ul class="card-slider__meta-data__social-share icon-linearicon social-share--list">
-<li><a href="http://twitter.com/intent/tweet?in_reply_to=1031559786419154944" target="_blank" class="icon--reply no-icon"></a></li>
-<li><a href="http://twitter.com/intent/retweet?tweet_id=1031559786419154944" target="_blank" class="icon--repeat no-icon"></a></li>
-<li><a href="http://twitter.com/intent/favorite?tweet_id=1031559786419154944" target="_blank" class="icon--star no-icon"></a></li>
-</ul>
-<div class="card-slider__meta-data icon-twitter">
-<span class="card-slider__meta-data__authors"><a href="http://twitter.com/YaleSOM" class="no-icon" target="_blank">@YaleSOM</a></span>
-</div>
-</article>
+
+```html|span-4,plain,light
+<ul class="ysm-slider__list" data-min-height="true">
+<li class="ysm-slider__slot">
+<article id="paragraph-17750" class="card card--social">
+  <header class="card__object  card--no-media card--social--twitter" data-dynamic-font-size="true" style="--dynamic-font-size:486px">
+          <h2 class="card__title tweet-text">
+        Meet the Master’s Degree in Global Business and Society Class of <a target="_blank" rel="nofollow" class="twitter-timeline-link" href="https://twitter.com//search?q=%23Yale2021">#Yale2021</a>. <a href="https://t.co/rqvd5iJbsy">https://t.co/rqvd5iJbsy</a>      </h2>
+                  <div class="tweet-author-wrapper">
+                <a href="https://twitter.com/YaleSOM" aria-label="Visit Yale SOM on Twitter" rel="nofollow" target="_blank" class="no-icon"><img data-icon="" src="//pbs.twimg.com/profile_images/877910548100329472/ENIm5pUS_normal.jpg" alt="" width="48" height="48"><noscript><img src="//pbs.twimg.com/profile_images/877910548100329472/ENIm5pUS_normal.jpg" width="48" height="48" alt="" /></noscript><span class="tweet-author">Yale SOM</span><span class="tweet-screenname">@YaleSOM</span></a></div>
+              <div class="tweet-footer content-group content-group--grid-2up">
+                <div class="tweet-time"><a href="http://twitter.com/YaleSOM/status/1308768694768721922" class="no-icon"><em class="placeholder">2 months 2 days</em> ago</a></div>
+                <div class="tweet-actions">
+                  <a href="https://twitter.com/intent/tweet?in_reply_to=1308768694768721922" class="tweet--reply no-icon"><span>Reply</span></a><a href="https://twitter.com/intent/retweet?tweet_id=1308768694768721922" class="tweet--repeat no-icon"><span>Retweet</span></a><a href="https://twitter.com/intent/favorite?tweet_id=1308768694768721922" class="tweet--star no-icon"><span>Favorite</span></a></div>
+              </div>      </header>
+      <footer class="metadata metadata--flat metadata--submitted">
+      <span class="metadata__item metadata__timestamp timestamp">September 23, 2020</span>      <span class="metadata__item metadata__author"><a href="https://twitter.com/YaleSOM" target="_blank" class="no-icon">@YaleSOM</a></span>          </footer>
+    </article>
 </li>
 </ul>
 ```
+
 ```hint|neutral,span-2
 **Non-image social card**
 Twitter represents a unique type of social card in that the primary visual is text. For non-visual cards, we transform the text into the visual element.
 ```
+
 ## Markup
+
 Import the following components to use the preferred markup pattern for content cards:
 `@import "~yale-som-theme/scss/components/_cards";`
 `@import "~yale-som-theme/scss/components/_metadata";`
+
 ```code|lang-html
-<article class="node card">
-  <header class="card__object card--has-url" data-dynamic-font-size="true" style="font-size: 301px;">
+<article class="node-teaser card">
+  <header class="card__object card--has-url card--<card-type>" data-dynamic-font-size="true" style="font-size: 301px;">
     <h2 class="card__title">Get connected</h2>
       <div class="card__media">
         <a href="#" class="no-icon" aria-label="Continue reading Get connected">
-          <img class="card__image" aria-role="presentation" 
-            src="example.jpg" alt="Students around conference table" 
+          <img class="card__image" aria-role="presentation"
+            src="example.jpg" alt="Students around conference table"
             title="" />
         </a>
       </div>
   </header>
-  <div class="card__metadata metadata metadata--flat">
-    <span class="card__metadata__date metadata__item">February 25, 2019</span>
-    <span class="card__metadata__authors metadata__item">
+  <footer class="metadata metadata--flat metadata--submitted">
+    <span class="metadata__item metadata__timestamp timestamp">February 25, 2019</span>
+    <span class="metadata__item metadata__author">
       <a href="#">Ranji Nagaswami</a>
     </span>
-    <span class="card__metadata__source metadata__item">
+    <span class="metadata__item metadata__source metadata__source--insights-article">
       <a href="#" target="_blank">Yale Insights</a>
     </span>
-  </div>
+  </footer>
 </article>
 ```
 
 ```code|lang-js,span-4
 YaleSOM.dynamicFontSize = function () {
   $('[data-dynamic-font-size=true]').each(function () {
-    $(this).css('font-size', $(this).outerWidth());
+    $(this).attr(
+          "style",
+          "--dynamic-font-size:" + $(this).outerWidth() + "px"
+        );
   });
 };
 ```
+
 ```hint|neutral,span-2
 **Dynamic font scaling**
-In most contexts, card headlines should scale relative to the containing element. This can be accomplished with the provided JavaScript function, which will change the font-size methodology from breakpoints to inherited font size.  
+In most contexts, card headlines should scale relative to the containing element. This can be accomplished with the provided JavaScript function, which will change the font-size methodology from breakpoints to a font size CSS variable.
 ```
+
 # Usage
+
 ## Card slider
+
 ```image|plain
 src: "/exfoliation-design-system/assets/components/card-slider__sample.png"
 ```
 
 ## Card stack
+
 ```image|plain
 src: "/exfoliation-design-system/assets/components/image2019-1-17_15-5-8.png"
 ```
+
 ## Card teaser
+
 ```image|plain
 src: "/exfoliation-design-system/assets/components/image2019-1-17_14-59-43.png"
 ```
+
 ## Card grid
+
 ```image|plain
 src: "/exfoliation-design-system/assets/components/card-grid.png"
 ```
