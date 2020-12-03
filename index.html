@@ -1,25 +1,63 @@
 <!doctype html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Exfoliation Design Documentation</title>
   <link rel="shortcut icon" href="assets/core/favicon-96x96.png">
   <style>
-    blockquote[class*=catalog-] { font-size: 1.5rem !important; padding:0 !important; }
-    blockquote[class*=catalog-] > * { float:none !important; width: auto !important;}
-    blockquote[class*=catalog-] p::after, blockquote[class*=catalog-] p::before { content:'' !important; }
-    h1 {font-weight: 700 !important;}
-    label { display:block; }
-    p a { color:inherit !important;
-      border-bottom-color:#a5d2eb !important;}
-      .accessible-color {
-        font-family: NeueHaasUnicaPro,clean,sans-serif;
-        font-weight: 700;
-        padding:0.5em;
-      }
+    blockquote[class*=catalog-] {
+      padding: 0 !important;
+    }
+
+    blockquote[class*=catalog-] p {
+      font-size: 1.5rem !important;
+    }
+
+    blockquote[class*=catalog-]>* {
+      float: none !important;
+      width: auto !important;
+    }
+
+    blockquote[class*=catalog-] p::after,
+    blockquote[class*=catalog-] p::before {
+      content: '' !important;
+    }
+
+    h1 {
+      font-weight: 700 !important;
+    }
+
+    label {
+      display: block;
+    }
+
+    p a {
+      color: inherit !important;
+      border-bottom-color: #a5d2eb !important;
+    }
+
+    .content-layout {
+      background: #edf6fb;
+      padding: 2.5rem;
+    }
+
+    .content-layout__main,
+    .content-layout__main--extended,
+    .content-layout__aside {
+      border: #ddd 1px dashed;
+      padding: 20px;
+    }
+
+    .accessible-color {
+      font-family: NeueHaasUnicaPro, clean, sans-serif;
+      font-weight: 700;
+      padding: 0.5em;
+    }
   </style>
 </head>
+
 <body>
   <div id="catalog" />
   <!-- Required for React specimens -->
@@ -29,19 +67,24 @@
   <!-- <script src="https://unpkg.com/catalog@3/dist/catalog-standalone.development.js"></script> -->
 
   <!-- Use the minified production version to get optimal performance -->
-  <script src="https://unpkg.com/catalog@3/dist/catalog-standalone.min.js"></script>
+  <script src="https://unpkg.com/catalog@3.6.0/dist/catalog-standalone.min.js"></script>
 
 
   <script>
+    var prodURL = 'https://som.yale.edu/sites/all/themes/';
     Catalog.render({
       title: 'Exfoliation design system',
-      styles: ['https://som.yale.edu/sites/all/themes/yalesom/assets/dist/css/yalesom-theme.main.min.css','https://som.yale.edu/sites/all/themes/common_assets/components/card-slider/assets/dist/css/card-slider.main.min.css','https://som.yale.edu/sites/all/themes/common_assets/components/media-slider/assets/dist/css/media-slider.main.min.css','https://somweb-1565-som-yale.pantheonsite.io/sites/all/themes/common_assets/components/ysm_sliders/slider-marquee/assets/dist/css/slider-marquee.main.min.css'],
-      logoSrc:'assets/core/yalesom_shield.svg',
+      styles: [
+        prodURL + 'yalesom/assets/dist/css/yalesom-theme.main.min.css',
+        prodURL + 'common_assets/components/ysm_sliders/assets/dist/css/slider-card.main.min.css',
+        prodURL + 'common_assets/components/ysm_sliders/assets/dist/css/slider-marquee.main.min.css'
+      ],
+      logoSrc: 'assets/core/yalesom_shield.svg',
       responsiveSizes: [
-        {name: 'Phone', width: 375, height: 480},
-        {name: 'Tablet', width: 720, height: 1024},
-        {name: 'Desktop', width: 1024, height: 1080},
-        {name: 'Big desktop', width: 1280, height: 1080},
+        { name: 'Phone', width: 375, height: 480 },
+        { name: 'Tablet', width: 720, height: 1024 },
+        { name: 'Desktop', width: 1024, height: 1080 },
+        { name: 'Big desktop', width: 1280, height: 1080 },
       ],
       theme: {
         // Colors
@@ -106,7 +149,7 @@
         // baseFontSize: 16,
 
         // Modular scale ratio that is used to figure out all the different font sizes
-        msRatio: 1.1
+        msRatio: 1.2
       },
       pages: [
         // Sample, do not remove
@@ -119,72 +162,77 @@
         //  ]
         // },
         {
-          title:'Introduction',
-          pages:[
+          title: 'Introduction',
+          pages: [
             {
-              path:'/',
-              title:'Exfoliation design system',
-              src:'docs/introduction/intro.md',
+              path: '/',
+              title: 'Exfoliation design system',
+              src: 'docs/introduction/intro.md',
             },
             {
-              path:'/introduction/cheatsheet',
-              title:'Cheat sheet',
-              src:'docs/introduction/cheatsheet.md',
+              path: '/introduction/cheatsheet',
+              title: 'Cheat sheet',
+              src: 'docs/introduction/cheatsheet.md',
             }
           ]
         },
         {
           title: 'Brand',
-          pages:[
+          pages: [
             {
-              path:'/brand/logo',
-              title:'Logo',
-              src:'docs/brand/logo.md',
+              path: '/brand/logo',
+              title: 'Logo',
+              src: 'docs/brand/logo.md',
             },
             {
-              path:'/brand/color',
-              title:'Colors',
-              src:'docs/brand/color.md',
+              path: '/brand/color',
+              title: 'Colors',
+              src: 'docs/brand/color.md',
             },
             {
-              path:'/brand/typography',
-              title:'Typography',
-              src:'docs/brand/typography.md',
+              path: '/brand/typography',
+              title: 'Typography',
+              src: 'docs/brand/typography.md',
             },
             {
-              path:'/brand/icons',
-              title:'Icons',
-              src:'docs/brand/icons.md',
+              path: '/brand/icons',
+              title: 'Icons',
+              src: 'docs/brand/icons.md',
             }
           ]
         },
         {
           title: 'Design System',
-          pages:[
+          pages: [
             {
-              path:'/design/buttons',
-              title:'Buttons',
-              src:'docs/design_system/buttons.md',
+              path: '/design/buttons',
+              title: 'Buttons',
+              src: 'docs/design_system/buttons.md',
             },
             {
-              path:'/design/tables',
-              title:'Tables',
-              src:'docs/design_system/tables.md',
+              path: '/design/tables',
+              title: 'Tables',
+              src: 'docs/design_system/tables.md',
             },
             {
-              path:'/design/forms',
-              title:'Forms',
-              src:'docs/design_system/forms.md',
+              path: '/design/headings',
+              title: 'Headings',
+              src: 'docs/design_system/headings.md',
             },
             {
-              path:'/design/boxes',
-              title:'Boxes',
-              src:'docs/design_system/boxes.md',
+              path: '/design/forms',
+              title: 'Forms',
+              src: 'docs/design_system/forms.md',
             },
             {
-              path:'/design/tooltip',
-              title:'Tooltip',
-              src:'docs/design_system/tooltip.md',
+              path: '/design/boxes',
+              title: 'Boxes',
+              src: 'docs/design_system/boxes.md',
+            },
+            {
+              path: '/design/tooltip',
+              title: 'Tooltip',
+              src: 'docs/design_system/tooltip.md',
             },
             // {
             //   path:'/design/metadata',
@@ -197,39 +245,39 @@
           title: 'Components',
           pages: [
             {
-              path:'/components/cards',
-              title:'Cards',
-              src:'docs/components/cards.md',
+              path: '/components/cards',
+              title: 'Cards',
+              src: 'docs/components/cards.md',
             },
             {
-              path:'/components/slides',
-              title:'Slides',
-              src:'docs/components/slides.md',
+              path: '/components/slides',
+              title: 'Slides',
+              src: 'docs/components/slides.md',
             },
             {
-              path:'/components/teasers',
-              title:'Content Teasers',
-              src:'docs/components/teasers.md',
+              path: '/components/teasers',
+              title: 'Content Teasers',
+              src: 'docs/components/teasers.md',
             }
           ]
         },
         {
           title: 'Layout',
-          pages:[
+          pages: [
             {
-              path:'/layout/grid',
-              title:'Grid System',
-              src:'docs/layout/grid.md',
+              path: '/layout/content',
+              title: 'Content layout',
+              src: 'docs/layout/content-layout.md',
             },
             {
-              path:'/layout/content',
-              title:'Content layout',
-              src:'docs/layout/content-layout.md',
+              path: '/layout/content-group',
+              title: 'Content group',
+              src: 'docs/layout/content-group.md',
             },
             {
-              path:'/layout/content-group',
-              title:'Content group',
-              src:'docs/layout/content-group.md',
+              path: '/layout/breakpoints',
+              title: 'Breakpoints',
+              src: 'docs/layout/breakpoints.md',
             }
           ]
         },
@@ -243,4 +291,5 @@
     }, document.getElementById('catalog'));
   </script>
 </body>
+
 </html>
